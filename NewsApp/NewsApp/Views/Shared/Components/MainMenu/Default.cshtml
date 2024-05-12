@@ -1,0 +1,33 @@
+﻿
+
+@model CategoriesOrtaSayfaModel
+
+@foreach (var category in Model.Categories)
+{
+    <li class="nav-item dropdown dropdown-mega">
+        <a class="nav-link mega-menu-a dropdown-toggle" href="#" id="navbarDropdown-@category.CategoryID" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            @category.CategoryName
+        </a>
+        <ul class="dropdown-menu dropdown-menu1 shadow" aria-labelledby="navbarDropdown-@category.CategoryID">
+            <li class="mega-content">
+                <div class="meg-inside">
+                    <div class="menu-sild owl-carousel owl-theme">
+                        @foreach (var newsItem in Model.NewsByCategory[category])
+                        {
+                            <a href="/Home/NewsDetails/@newsItem.NewsID" class="comon-menu-div">
+                                <figure>
+                                    <img src="@newsItem.NewsPhoto" alt="dp-1" />
+                                </figure>
+                                <span class="tags1">@category.CategoryName</span>
+                                <p>@newsItem.NewsShortDescription</p>
+                            </a>
+                        }
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </li>
+}
+
+
+

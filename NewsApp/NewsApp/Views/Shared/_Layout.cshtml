@@ -1,0 +1,844 @@
+﻿<!doctype html>
+<html lang="tr">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>News - Home </title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- Bootstrap CSS -->
+    <link href="~/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../../../stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baskervville&amp;family=Inter:wght@200;300;400&amp;family=Kaushan+Script&amp;family=Libre+Baskerville:wght@400;700&amp;family=Nothing+You+Could+Do&amp;family=Open+Sans:wght@300;400;500;600&amp;family=PT+Sans+Narrow:wght@700&amp;family=Red+Hat+Display:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+
+    <link href="~/css/all.min.css" rel="stylesheet">
+    <link href="~/css/style.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="~/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="~/css/owl.theme.default.min.css" />
+
+    @RenderSection("Styles", required: false)
+
+</head>
+
+<body>
+    <!-- comon header  -->
+    <partial name="_Header" />
+    <!-- comon header ends  -->
+    <partial name="_MainMenu" />
+
+    <!-- Total Body  -->
+    <section class="total-body pt-3 d-block">
+        @RenderBody();
+    </section>
+
+
+    <footer class="mt-5">
+        <div class="container">
+            <div class="row">
+
+                <div class="left-footer">
+
+
+
+
+
+
+                    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 mt-4">
+                        <div class="col">
+                            <h5>Categories </h5>
+                            <ul class="list-unstyled">
+                                <li> <a href="category.html"> National </a> </li>
+                                <li> <a href="listing.html"> Business </a> </li>
+                                <li> <a href="listing.html"> World </a> </li>
+                                <li> <a href="listing.html"> Business </a> </li>
+                                <li> <a href="listing.html"> LifeStyle </a> </li>
+                                <li> <a href="listing.html"> Sports </a> </li>
+                                <li> <a href="listing.html"> Photo </a> </li>
+                                <li> <a href="listing.html"> Videos </a> </li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <h5>About </h5>
+                            <ul class="list-unstyled">
+                                <li> <a href="blogs.html"> Blogs </a> </li>
+                                <li> <a href="live.html"> Live </a> </li>
+                                <li> <a href="contactus.html"> Conatct Us </a> </li>
+                                <li> <a href="privacy-policy.html"> privacy policy </a> </li>
+                                <li> <a href="terms-conditions.html"> Terms and conditions </a> </li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <h5>Support </h5>
+                            <ul class="list-unstyled">
+                                <li> <i class="fas fa-phone-square-alt"></i> 1800-250-5260 </li>
+                                <li> <i class="fas fa-envelope"></i> support@example.com </li>
+                                <li> <i class="fas fa-fax"></i> support@example.com </li>
+
+                                <li class="d-flex sc1">
+                                    <a href="#"> <i class="fab fa-facebook-f"></i> </a>
+                                    <a href="#"> <i class="fab fa-twitter"></i> </a>
+                                    <a href="#"> <i class="fab fa-pinterest"></i> </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col ">
+                            <h5>Newsletter Subscibe</h5>
+                            <div class="suscribe-sec-ft">
+
+                                <input type="text" class="form-control" placeholder="Enter you Email" />
+                                <button class="btn sub-btn"> Subscibe</button>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                    <hr />
+
+                    <p class="text-center"> 2022-2023 © MH News. All rights reserved.</p>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <!-- mobile menu -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="mobilemenu" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <button type="button" class="close-menu text-reset" data-bs-dismiss="offcanvas" aria-label="Close">
+                Close <i class="fas fa-long-arrow-alt-right"></i>
+            </button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="head-contact">
+                <a href="index.html" class="logo-side">
+                    <img src="~/images/mobile-logo.png" alt="logo">
+                </a>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+                <div class="mobile-menu-sec mt-3">
+                    <ul class="list-unstyled">
+                        <li class="active-m">
+                            <a href="index.html"> Home </a>
+                        </li>
+
+
+                        <li>
+                            <div class="btn-group">
+                                <button class="btn p-0 dropdown-toggle" type="button" id="dropdownMenuClickableInside" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                                    National
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuClickableInside">
+                                    <li>
+
+                                        <div class="meg-inside">
+                                            <div class="menu-sild owl-carousel owl-theme">
+
+                                                <a class="comon-menu-div" href="#">
+                                                    <figure>
+                                                        <img src="~/images/news1.jpg" alt="dp-1" />
+                                                    </figure>
+                                                    <span class="tags1"> National </span>
+                                                    <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+
+                                                </a>
+
+                                                <a class="comon-menu-div" href="#">
+                                                    <figure>
+                                                        <img src="~/images/news2.jpg" alt="dp-1" />
+                                                    </figure>
+                                                    <span class="tags1"> National </span>
+                                                    <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+
+                                                </a>
+
+
+                                                <a class="comon-menu-div" href="#">
+                                                    <figure>
+                                                        <img src="~/images/news-x3.webp" alt="dp-1" />
+                                                    </figure>
+                                                    <span class="tags1"> National </span>
+                                                    <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+
+                                                </a>
+
+
+                                                <a class="comon-menu-div" href="#">
+                                                    <figure>
+                                                        <img src="~/images/news-x4.webp" alt="dp-1" />
+                                                    </figure>
+                                                    <span class="tags1"> National </span>
+                                                    <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+
+                                                </a>
+
+                                                <a class="comon-menu-div" href="#">
+                                                    <figure>
+                                                        <img src="~/images/news-5.jpg" alt="dp-1" />
+                                                    </figure>
+                                                    <span class="tags1"> National </span>
+                                                    <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+
+                                                </a>
+
+                                                <a class="comon-menu-div" href="#">
+                                                    <figure>
+                                                        <img src="~/images/news-6.jpg" alt="dp-1" />
+                                                    </figure>
+                                                    <span class="tags1"> National </span>
+                                                    <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+
+                                                </a>
+
+                                                <a class="comon-menu-div" href="#">
+                                                    <figure>
+                                                        <img src="~/images/news-7.jpg" alt="dp-1" />
+                                                    </figure>
+                                                    <span class="tags1"> National </span>
+                                                    <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+
+                                                </a>
+
+
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                </ul>
+                            </div>
+
+                        </li>
+
+                        <li>
+                            <div class="btn-group">
+                                <button class="btn p-0 dropdown-toggle" type="button" id="dropdownMenuClickableInside" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                                    World
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuClickableInside">
+                                    <li>
+
+                                        <div class="meg-inside">
+                                            <div class="menu-sild owl-carousel owl-theme">
+
+                                                <a class="comon-menu-div" href="#">
+                                                    <figure>
+                                                        <img src="~/images/news1.jpg" alt="dp-1" />
+                                                    </figure>
+                                                    <span class="tags1"> National </span>
+                                                    <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+
+                                                </a>
+
+                                                <a class="comon-menu-div" href="#">
+                                                    <figure>
+                                                        <img src="~/images/news2.jpg" alt="dp-1" />
+                                                    </figure>
+                                                    <span class="tags1"> National </span>
+                                                    <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+
+                                                </a>
+
+
+                                                <a class="comon-menu-div" href="#">
+                                                    <figure>
+                                                        <img src="~/images/news-x3.webp" alt="dp-1" />
+                                                    </figure>
+                                                    <span class="tags1"> National </span>
+                                                    <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+
+                                                </a>
+
+
+                                                <a class="comon-menu-div" href="#">
+                                                    <figure>
+                                                        <img src="~/images/news-x4.webp" alt="dp-1" />
+                                                    </figure>
+                                                    <span class="tags1"> National </span>
+                                                    <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+
+                                                </a>
+
+                                                <a class="comon-menu-div" href="#">
+                                                    <figure>
+                                                        <img src="~/images/news-5.jpg" alt="dp-1" />
+                                                    </figure>
+                                                    <span class="tags1"> National </span>
+                                                    <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+
+                                                </a>
+
+                                                <a class="comon-menu-div" href="#">
+                                                    <figure>
+                                                        <img src="~/images/news-6.jpg" alt="dp-1" />
+                                                    </figure>
+                                                    <span class="tags1"> National </span>
+                                                    <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+
+                                                </a>
+
+                                                <a class="comon-menu-div" href="#">
+                                                    <figure>
+                                                        <img src="~/images/news-7.jpg" alt="dp-1" />
+                                                    </figure>
+                                                    <span class="tags1"> National </span>
+                                                    <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+
+                                                </a>
+
+
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                </ul>
+                            </div>
+
+                        </li>
+
+                        <li>
+                            <div class="btn-group">
+                                <button class="btn p-0 dropdown-toggle" type="button" id="dropdownMenuClickableInside" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                                    Business
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuClickableInside">
+                                    <li>
+
+                                        <div class="meg-inside">
+                                            <div class="menu-sild owl-carousel owl-theme">
+
+                                                <a class="comon-menu-div" href="#">
+                                                    <figure>
+                                                        <img src="~/images/news1.jpg" alt="dp-1" />
+                                                    </figure>
+                                                    <span class="tags1"> National </span>
+                                                    <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+
+                                                </a>
+
+                                                <a class="comon-menu-div" href="#">
+                                                    <figure>
+                                                        <img src="~/images/news2.jpg" alt="dp-1" />
+                                                    </figure>
+                                                    <span class="tags1"> National </span>
+                                                    <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+
+                                                </a>
+
+
+                                                <a class="comon-menu-div" href="#">
+                                                    <figure>
+                                                        <img src="~/images/news-x3.webp" alt="dp-1" />
+                                                    </figure>
+                                                    <span class="tags1"> National </span>
+                                                    <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+
+                                                </a>
+
+
+                                                <a class="comon-menu-div" href="#">
+                                                    <figure>
+                                                        <img src="~/images/news-x4.webp" alt="dp-1" />
+                                                    </figure>
+                                                    <span class="tags1"> National </span>
+                                                    <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+
+                                                </a>
+
+                                                <a class="comon-menu-div" href="#">
+                                                    <figure>
+                                                        <img src="~/images/news-5.jpg" alt="dp-1" />
+                                                    </figure>
+                                                    <span class="tags1"> National </span>
+                                                    <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+
+                                                </a>
+
+                                                <a class="comon-menu-div" href="#">
+                                                    <figure>
+                                                        <img src="~/images/news-6.jpg" alt="dp-1" />
+                                                    </figure>
+                                                    <span class="tags1"> National </span>
+                                                    <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+
+                                                </a>
+
+                                                <a class="comon-menu-div" href="#">
+                                                    <figure>
+                                                        <img src="~/images/news-7.jpg" alt="dp-1" />
+                                                    </figure>
+                                                    <span class="tags1"> National </span>
+                                                    <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+
+                                                </a>
+
+
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                </ul>
+                            </div>
+
+                        </li>
+
+                        <li>
+                            <div class="btn-group">
+                                <button class="btn p-0 dropdown-toggle" type="button" id="dropdownMenuClickableInside" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                                    Entertainment
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuClickableInside">
+                                    <li>
+
+                                        <div class="meg-inside">
+                                            <div class="menu-sild owl-carousel owl-theme">
+
+                                                <a class="comon-menu-div" href="#">
+                                                    <figure>
+                                                        <img src="~/images/news1.jpg" alt="dp-1" />
+                                                    </figure>
+                                                    <span class="tags1"> National </span>
+                                                    <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+
+                                                </a>
+
+                                                <a class="comon-menu-div" href="#">
+                                                    <figure>
+                                                        <img src="~/images/news2.jpg" alt="dp-1" />
+                                                    </figure>
+                                                    <span class="tags1"> National </span>
+                                                    <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+
+                                                </a>
+
+
+                                                <a class="comon-menu-div" href="#">
+                                                    <figure>
+                                                        <img src="~/images/news-x3.webp" alt="dp-1" />
+                                                    </figure>
+                                                    <span class="tags1"> National </span>
+                                                    <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+
+                                                </a>
+
+
+                                                <a class="comon-menu-div" href="#">
+                                                    <figure>
+                                                        <img src="~/images/news-x4.webp" alt="dp-1" />
+                                                    </figure>
+                                                    <span class="tags1"> National </span>
+                                                    <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+
+                                                </a>
+
+                                                <a class="comon-menu-div" href="#">
+                                                    <figure>
+                                                        <img src="~/images/news-5.jpg" alt="dp-1" />
+                                                    </figure>
+                                                    <span class="tags1"> National </span>
+                                                    <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+
+                                                </a>
+
+                                                <a class="comon-menu-div" href="#">
+                                                    <figure>
+                                                        <img src="~/images/news-6.jpg" alt="dp-1" />
+                                                    </figure>
+                                                    <span class="tags1"> National </span>
+                                                    <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+
+                                                </a>
+
+                                                <a class="comon-menu-div" href="#">
+                                                    <figure>
+                                                        <img src="~/images/news-7.jpg" alt="dp-1" />
+                                                    </figure>
+                                                    <span class="tags1"> National </span>
+                                                    <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+
+                                                </a>
+
+
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                </ul>
+                            </div>
+
+                        </li>
+
+                        <li>
+                            <div class="btn-group">
+                                <button class="btn p-0 dropdown-toggle" type="button" id="dropdownMenuClickableInside" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                                    Lifestyle
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuClickableInside">
+                                    <li>
+
+                                        <div class="meg-inside">
+                                            <div class="menu-sild owl-carousel owl-theme">
+
+                                                <a class="comon-menu-div" href="#">
+                                                    <figure>
+                                                        <img src="~/images/news1.jpg" alt="dp-1" />
+                                                    </figure>
+                                                    <span class="tags1"> National </span>
+                                                    <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+
+                                                </a>
+
+                                                <a class="comon-menu-div" href="#">
+                                                    <figure>
+                                                        <img src="~/images/news2.jpg" alt="dp-1" />
+                                                    </figure>
+                                                    <span class="tags1"> National </span>
+                                                    <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+
+                                                </a>
+
+
+                                                <a class="comon-menu-div" href="#">
+                                                    <figure>
+                                                        <img src="~/images/news-x3.webp" alt="dp-1" />
+                                                    </figure>
+                                                    <span class="tags1"> National </span>
+                                                    <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+
+                                                </a>
+
+
+                                                <a class="comon-menu-div" href="#">
+                                                    <figure>
+                                                        <img src="~/images/news-x4.webp" alt="dp-1" />
+                                                    </figure>
+                                                    <span class="tags1"> National </span>
+                                                    <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+
+                                                </a>
+
+                                                <a class="comon-menu-div" href="#">
+                                                    <figure>
+                                                        <img src="~/images/news-5.jpg" alt="dp-1" />
+                                                    </figure>
+                                                    <span class="tags1"> National </span>
+                                                    <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+
+                                                </a>
+
+                                                <a class="comon-menu-div" href="#">
+                                                    <figure>
+                                                        <img src="~/images/news-6.jpg" alt="dp-1" />
+                                                    </figure>
+                                                    <span class="tags1"> National </span>
+                                                    <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+
+                                                </a>
+
+                                                <a class="comon-menu-div" href="#">
+                                                    <figure>
+                                                        <img src="~/images/news-7.jpg" alt="dp-1" />
+                                                    </figure>
+                                                    <span class="tags1"> National </span>
+                                                    <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+
+                                                </a>
+
+
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                </ul>
+                            </div>
+
+                        </li>
+
+                        <li>
+                            <div class="btn-group">
+                                <button class="btn p-0 dropdown-toggle" type="button" id="dropdownMenuClickableInside" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                                    Sport
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuClickableInside">
+                                    <li>
+
+                                        <div class="meg-inside">
+                                            <div class="menu-sild owl-carousel owl-theme">
+
+                                                <a class="comon-menu-div" href="#">
+                                                    <figure>
+                                                        <img src="~/images/news1.jpg" alt="dp-1" />
+                                                    </figure>
+                                                    <span class="tags1"> National </span>
+                                                    <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+
+                                                </a>
+
+                                                <a class="comon-menu-div" href="#">
+                                                    <figure>
+                                                        <img src="~/images/news2.jpg" alt="dp-1" />
+                                                    </figure>
+                                                    <span class="tags1"> National </span>
+                                                    <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+
+                                                </a>
+
+
+                                                <a class="comon-menu-div" href="#">
+                                                    <figure>
+                                                        <img src="~/images/news-x3.webp" alt="dp-1" />
+                                                    </figure>
+                                                    <span class="tags1"> National </span>
+                                                    <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+
+                                                </a>
+
+
+                                                <a class="comon-menu-div" href="#">
+                                                    <figure>
+                                                        <img src="~/images/news-x4.webp" alt="dp-1" />
+                                                    </figure>
+                                                    <span class="tags1"> National </span>
+                                                    <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+
+                                                </a>
+
+                                                <a class="comon-menu-div" href="#">
+                                                    <figure>
+                                                        <img src="~/images/news-5.jpg" alt="dp-1" />
+                                                    </figure>
+                                                    <span class="tags1"> National </span>
+                                                    <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+
+                                                </a>
+
+                                                <a class="comon-menu-div" href="#">
+                                                    <figure>
+                                                        <img src="~/images/news-6.jpg" alt="dp-1" />
+                                                    </figure>
+                                                    <span class="tags1"> National </span>
+                                                    <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+
+                                                </a>
+
+                                                <a class="comon-menu-div" href="#">
+                                                    <figure>
+                                                        <img src="~/images/news-7.jpg" alt="dp-1" />
+                                                    </figure>
+                                                    <span class="tags1"> National </span>
+                                                    <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+
+                                                </a>
+
+
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                </ul>
+                            </div>
+
+                        </li>
+
+                        <li>
+                            <a href="blog.html">Blog </a>
+                        </li>
+                        <li>
+                            <a href="contactus.html">Contact us</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <ul class="side-media list-unstyled">
+                    <li> <a href="#"> <i class="fab fa-facebook-f"></i> </a> </li>
+                    <li> <a href="#"> <i class="fab fa-twitter"></i> </a> </li>
+                    <li> <a href="#"> <i class="fab fa-google-plus-g"></i> </a> </li>
+                    <li> <a href="#"> <i class="fab fa-instagram"></i> </a> </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- login Modal -->
+    <div class="modal fade login-div-modal" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                </div>
+                <div class="modal-body">
+
+                    <div id="login-td-div" class="com-div-md">
+                        <span class="text-center d-table m-auto user-icon"> <i class="fas fa-user-circle"></i> </span>
+                        <h5 class="text-center mb-3"> Sign In </h5>
+                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                        <div class="login-modal-pn">
+
+                            <div class="cm-select-login mt-3">
+                                <div class="country-dp">
+
+                                    <input type="email" class="form-control" placeholder="Username Or Email" alt="pn">
+                                </div>
+                                <div class="phone-div">
+
+                                    <input type="password" class="form-control" placeholder="Password" alt="pn">
+                                </div>
+
+
+                            </div>
+
+
+
+                            <button class="btn continue-bn"> <i class="fas fa-lock"></i> SIGN IN </button>
+                        </div>
+
+                        <p class="text-center  mt-3">
+                            <a data-bs-toggle="modal" class="regster-bn" data-bs-target="#lostpsModal" data-bs-dismiss="modal"> Lost Password ? </a>
+                        </p>
+
+
+                        <p class="text-center  mt-3">
+                            Do not have an account?
+                            <a data-bs-toggle="modal" class="regster-bn" data-bs-target="#registerModal" data-bs-dismiss="modal"> Register </a>
+                        </p>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- register Modal -->
+
+    <div class="modal fade login-div-modal" id="registerModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                </div>
+                <div class="modal-body">
+                    <div id="login-td-div" class="com-div-md">
+                        <span class="text-center d-table m-auto user-icon"> <i class="fas fa-user-circle"></i> </span>
+                        <h5 class="text-center mb-3"> Register </h5>
+                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                        <div class="login-modal-pn">
+
+                            <div class="cm-select-login mt-3">
+                                <div class="country-dp">
+
+                                    <input type="text" class="form-control" placeholder="Full Name" alt="pn">
+                                </div>
+                                <div class="phone-div">
+
+                                    <input type="email" class="form-control" placeholder="Email or Phone Number" alt="pn">
+                                </div>
+                                <div class="phone-div">
+
+                                    <input type="password" class="form-control" placeholder="Create Password" alt="pn">
+                                </div>
+                                <div class="phone-div">
+
+                                    <input type="password" class="form-control" placeholder="Confirm Password" alt="pn">
+                                </div>
+
+                                <div class="forget2 mt-3 ml-3 d-flex justify-content-between">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">
+                                        By clicking Register, you agree to our
+                                        Terms of Use
+                                        and
+                                        Cookie Policy
+                                    </label>
+                                </div>
+
+                            </div>
+
+
+
+                            <button class="btn continue-bn"> Register </button>
+                        </div>
+
+                        <p class="text-center  mt-3">
+                            Do not have an account?
+                            <a data-bs-toggle="modal" class="regster-bn" data-bs-target="#loginModal" data-bs-dismiss="modal"> Login </a>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- lost password -->
+
+    <div class="modal fade login-div-modal" id="lostpsModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <!-- <h5 class="modal-title" id="exampleModalLabel">Register</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                </div>
+                <div class="modal-body">
+                    <div id="login-td-div" class="com-div-md">
+                        <span class="text-center d-table m-auto user-icon"> <i class="fas fa-user-circle"></i> </span>
+                        <h5 class="text-center mb-3"> Forget Your Password? </h5>
+                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                        <div class="login-modal-pn">
+                            <p> We'll email you a link to reset your password</p>
+                            <div class="cm-select-login mt-3">
+
+                                <div class="phone-div">
+
+                                    <input type="email" class="form-control" placeholder="Enter Your Email " alt="pn">
+                                </div>
+
+
+                            </div>
+
+
+
+                            <button class="btn continue-bn"> Send Me a password reset Link </button>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    @section Styles {
+        @RenderSection("Styles", required: false)
+    }
+    <script src="~/js/bootstrap.bundle.min.js"></script>
+    <script src="../../../code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"></script>
+    <!-- Owl Carousel -->
+    <script src="~/js/owl.carousel.min.js"></script>
+    <script src="~/js/custom.js"></script>
+
+</body>
+
+</html>

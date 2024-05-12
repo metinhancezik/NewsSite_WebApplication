@@ -1,0 +1,100 @@
+﻿
+@model EntityLayer.Models.News
+
+<h2>Haber Düzenle</h2>
+
+<form method="post" asp-action="HaberDuzenle" enctype="multipart/form-data" class="m-4">
+    <div class="text-danger" asp-validation-summary="All"></div>
+
+    <input type="hidden" asp-for="NewsID" />
+
+    <div class="form-group">
+        <label asp-for="NewsTitle">Haber Başlığı</label>
+        <input asp-for="NewsTitle" class="form-control" />
+        <span asp-validation-for="NewsTitle" class="text-danger"></span>
+    </div>
+
+
+    <div class="form-group">
+        <label asp-for="NewsPhoto">Haber Fotoğrafı</label>
+        <input type="file" name="file" class="form-control-file" />
+        <span asp-validation-for="NewsPhoto" class="text-danger"></span>
+    </div>
+
+    @if (!string.IsNullOrEmpty(Model.NewsPhoto))
+    {
+        <div>
+            <label>Mevcut Fotoğraf:</label>
+            <img style="height:200px" src="@Model.NewsPhoto" alt="Mevcut Haber Fotoğrafı" />
+        </div>
+        <input type="hidden" name="oldPhoto" value="@Model.NewsPhoto" />
+    }
+
+    <div class="form-group">
+        <label asp-for="NewsDetail">Haber Detayı</label>
+        <textarea asp-for="NewsDetail" class="form-control"></textarea>
+        <span asp-validation-for="NewsDetail" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="NewsShortDescription">Kısa Açıklama</label>
+        <input asp-for="NewsShortDescription" class="form-control" />
+        <span asp-validation-for="NewsShortDescription" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="NewsInSlide">Slider da gözüksün mü?</label>
+        <select asp-for="NewsInSlide" class="form-control">
+            <option value="false">Hayır</option>
+            <option value="true">Evet</option>
+        </select>
+        <span asp-validation-for="NewsInSlide" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="NewsIsLatest">Son dakika haber mi?</label>
+        <select asp-for="NewsIsLatest" class="form-control">
+            <option value="false">Hayır</option>
+            <option value="true">Evet</option>
+        </select>
+        <span asp-validation-for="NewsIsLatest" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="AnaHaber">Slider da gözüksün mü?</label>
+        <select asp-for="AnaHaber" class="form-control">
+            <option value="false">Hayır</option>
+            <option value="true">Evet</option>
+        </select>
+        <span asp-validation-for="NewsInSlide" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="CategoryID">Kategori</label>
+        <select asp-for="CategoryID" asp-items="@ViewBag.Categories" class="form-control">
+        </select>
+        <span asp-validation-for="CategoryID" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary">Güncelle</button>
+    </div>
+</form>
+
+
+@section Script
+    {
+    <script>
+        $(document).ready(function () {
+            $('#summernote').summernote();
+        });
+    </script>
+    <script src="~/adminlte-3.2.0/plugins/summernote/summernote-bs4.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
+}
+@section Style
+    {
+    <link rel="stylesheet" href="~/adminlte-3.2.0/plugins/summernote/summernote-bs4.min.css">
+
+}

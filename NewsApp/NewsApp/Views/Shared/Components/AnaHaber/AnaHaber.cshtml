@@ -1,0 +1,144 @@
+﻿@model IEnumerable<EntityLayer.Models.News>
+@if (Model is not null)
+{
+	<div class="hilights-news mt-4">
+		<div class="container">
+			<div class="row g-lg-2">
+				<div class="col-lg-13">
+					<div class="main-st-sec">
+						<h2 class="comon-sub-heading"> Manşetler </h2>
+						<div class="min-slider-st mt-4">
+							<div class="main-news owl-carousel owl-theme owl-loaded owl-drag">
+
+
+								<div class="owl-stage-outer">
+									<div class="owl-stage" style="transform: translate3d(-2612px, 0px, 0px); transition: all 0.25s ease 0s; width: 7836px;">
+										@foreach (var item in Model)
+										{
+											<div class="owl-item cloned" style="width: 1296px; margin-right: 10px;">
+												<a href="/Home/NewsDetails/@item.NewsID" class="comon-slider-items">
+													<figure>
+														<img src="@item.NewsPhoto" alt="big1">
+													</figure>
+
+													<span class="titel-t d-block">
+														@*<span class="nes-tags d-block"> @item.CategoryID </span>*@
+														<p>
+															@(item.AnaHaberBaslik is not null ? item.AnaHaberBaslik : item.NewsTitle)
+														</p>
+													</span>
+												</a>
+											</div>
+
+										}
+										@*<div class="owl-item cloned" style="width: 1296px; margin-right: 10px;">
+											<a href="#" class="comon-slider-items">
+												<figure>
+													<img src="images/news1.jpg" alt="big1">
+												</figure>
+
+												<span class="titel-t d-block">
+													<span class="nes-tags d-block"> Politika </span>
+													<p>
+														Scenes of violence in Washington It is a long established fact that a reader will be
+														distracted...
+													</p>
+													<span class="date-t d-block"> <b> Author </b> August 23, 2022 </span>
+												</span>
+											</a>
+										</div>
+										<div class="owl-item cloned" style="width: 1296px; margin-right: 10px;">
+											<a href="#" class="comon-slider-items">
+												<figure>
+													<img src="images/news-x5.webp" alt="big1">
+												</figure>
+
+												<span class="titel-t d-block">
+													<span class="nes-tags d-block"> Politika </span>
+													<p> It is a long established fact that a reader will be distracted...</p>
+													<span class="date-t d-block"> <b> Author </b> May 12, 2022 </span>
+												</span>
+											</a>
+										</div>
+										<div class="owl-item active" style="width: 1296px; margin-right: 10px;">
+											<a href="#" class="comon-slider-items">
+												<figure>
+													<img src="images/news1.jpg" alt="big1">
+												</figure>
+
+												<span class="titel-t d-block">
+													<span class="nes-tags d-block"> Politika </span>
+													<p>
+														Scenes of violence in Washington It is a long established fact that a reader will be
+														distracted...
+													</p>
+													<span class="date-t d-block"> <b> Author </b> August 23, 2022 </span>
+												</span>
+											</a>
+										</div>
+										<div class="owl-item" style="width: 1296px; margin-right: 10px;">
+											<a href="#" class="comon-slider-items">
+												<figure>
+													<img src="images/news-x5.webp" alt="big1">
+												</figure>
+
+												<span class="titel-t d-block">
+													<span class="nes-tags d-block"> Politika </span>
+													<p> It is a long established fact that a reader will be distracted...</p>
+													<span class="date-t d-block"> <b> Author </b> May 12, 2022 </span>
+												</span>
+											</a>
+										</div>
+										<div class="owl-item cloned" style="width: 1296px; margin-right: 10px;">
+											<a href="#" class="comon-slider-items">
+												<figure>
+													<img src="images/news1.jpg" alt="big1">
+												</figure>
+
+												<span class="titel-t d-block">
+													<span class="nes-tags d-block"> Politika </span>
+													<p>
+														Scenes of violence in Washington It is a long established fact that a reader will be
+														distracted...
+													</p>
+													<span class="date-t d-block"> <b> Author </b> August 23, 2022 </span>
+												</span>
+											</a>
+										</div>
+										<div class="owl-item cloned" style="width: 1296px; margin-right: 10px;">
+											<a href="#" class="comon-slider-items">
+												<figure>
+													<img src="images/news-x5.webp" alt="big1">
+												</figure>
+
+												<span class="titel-t d-block">
+													<span class="nes-tags d-block"> Politika </span>
+													<p> It is a long established fact that a reader will be distracted...</p>
+													<span class="date-t d-block"> <b> Author </b> May 12, 2022 </span>
+												</span>
+											</a>
+										</div>*@
+									</div>
+								</div>
+								<div class="owl-nav">
+									<button type="button" role="presentation" class="owl-prev">
+										<span aria-label="Previous">
+											‹
+										</span>
+									</button>
+									<button type="button" role="presentation" class="fa-arrow-right owl-next">
+										<span aria-label="Next">
+											›
+										</span>
+									</button>
+
+								</div><div class="owl-dots disabled"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+}

@@ -1,0 +1,52 @@
+﻿@{
+    ViewData["Title"] = "Login";
+}
+
+@model LoginModel
+<div class="login-container">
+    <h2>Login</h2>
+    <form method="post">
+        <div class="form-group">
+            <label asp-for="Name">Kullanıcı Adı:</label>
+            <input asp-for="Name" type="text" id="username" name="Name" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label asp-for="Password">Şifre:</label>
+            <input asp-for="Password" type="Password" id="password" name="password" class="form-control" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Giriş Yap</button>
+    </form>
+</div>
+
+@section Styles {
+    <style>
+        .login-container {
+            max-width: 300px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f8f8f8;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            padding: 10px 15px;
+            cursor: pointer;
+        }
+    </style>
+}

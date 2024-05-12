@@ -1,0 +1,26 @@
+﻿@model EntityLayer.Models.News
+<div class="para-details mt-4">
+
+	<div class="container">
+		<div class="col-lg-10 mx-auto">
+
+			<div class="news-item">
+				<h3>@Model.NewsTitle</h3>
+				<div>
+					<figure>
+						<img src="@Model.NewsPhoto" alt="big1" />
+					</figure>
+				</div>
+				<p>@Model.NewsDetail</p>
+				<h6 class="public-text"> Yayınlanma Tarihi : @Model.NewsDate.ToString("dd MMM yyyy")</h6>
+
+			</div>
+
+		</div>
+
+
+
+	</div>
+</div>
+
+

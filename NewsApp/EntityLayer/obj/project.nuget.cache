@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "ZLP3ljQKt/8awWGUmVXkVPBSVMaSJWz37TqjiFd0Jef+jjOg5tydwhKXG98MAREufSn1lCbOnjKrHGi/KY4TBA==",
+  "success": true,
+  "projectFilePath": "D:\\NewsApp\\EntityLayer\\EntityLayer.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\MSI\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\6.0.0\\microsoft.entityframeworkcore.analyzers.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,45 @@
+﻿@model IEnumerable<EntityLayer.Models.News>
+
+<div class="container">
+    <div class="breaking-news-divs d-flex justify-content-between">
+        <div class="letf">
+            <h5 class="m-0"> Breaking News</h5>
+        </div>
+        <div class="slide-section">
+            <marquee behavior=scroll direction="left" scrollamount="5" onMouseOver="this.stop()" onMouseOut="this.start()">
+
+               @foreach (var news in Model.Where(n => n.NewsIsLatest == true))
+                {
+                    <a href="/Home/NewsDetails/@news.NewsID"><i class="fas fa-certificate"></i>@news.NewsShortDescription </a>
+
+                }
+                @*
+                <a href="#"> <i class="fas fa-certificate"></i> It is a long established fact that a reader.. </a>
+                <a href="#"> <i class="fas fa-certificate"></i> Readable content of a page when looking at its layout.. </a>
+                <a href="#"> <i class="fas fa-certificate"></i> It is a long established fact that a reader.. </a>
+                <a href="#"> <i class="fas fa-certificate"></i> It is a long established fact that a reader.. </a>
+                <a href="#"> <i class="fas fa-certificate"></i> Readable content of a page when looking at its layout.. </a>
+                <a href="#"> <i class="fas fa-certificate"></i> It is a long established fact that a reader.. </a>
+                <a href="#"> <i class="fas fa-certificate"></i> It is a long established fact that a reader.. </a>
+                <a href="#"> <i class="fas fa-certificate"></i> Readable content of a page when looking at its layout.. </a>
+                <a href="#"> <i class="fas fa-certificate"></i> It is a long established fact that a reader.. </a>
+                <a href="#"> <i class="fas fa-certificate"></i> It is a long established fact that a reader.. </a>
+                <a href="#"> <i class="fas fa-certificate"></i> Readable content of a page when looking at its layout.. </a>
+                <a href
+    *@
+
+            </marquee>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+

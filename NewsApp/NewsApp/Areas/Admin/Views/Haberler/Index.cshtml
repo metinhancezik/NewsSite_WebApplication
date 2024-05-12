@@ -1,0 +1,171 @@
+﻿@model NewsListViewModel
+
+<form method="get" asp-action="Index">
+
+<div class="card-header">
+    <div class="form-group mb-2">
+        <div style="width: 25%; float: left;">
+                @*@Html.TextBox("FilterNews", null, new { @class = "form-control", @placeholder = "Aramak istediğiniz haberi girin..."/*, id = "filterInput" */})*@
+                <div class="form-group my-2">
+                    <input class="form-control" name="SearchTerm" placeholder="Aramak istediğiniz haber başlığını giriniz..." />
+                </div>
+            
+        </div>
+
+        <div style="float: left; margin-left: 20px; margin-bottom: 20px;">
+            <button type="submit" class="btn btn-info">Ara</button>
+        </div>
+    </div>
+</div>
+
+</form>
+
+
+
+<!-- /.card-header -->
+
+
+<div class="card-body" id="ilkGelen">
+
+    <div class="card-columns">
+        @foreach (var news in Model.News)
+        {
+            <div class="card">
+                <img class="card-img-top" src="@news.NewsPhoto" alt="@news.NewsTitle">
+                <div class="card-body">
+                    <h5 class="card-title">@news.NewsTitle</h5>
+                    <p class="card-text">@news.NewsShortDescription</p>
+                    <a asp-action="HaberDuzenle" asp-controller="Haberler" asp-area="Admin" asp-route-id="@news.NewsID" class="btn btn-primary">Düzenle</a>
+                    <a asp-action="HaberSil" asp-controller="Haberler" asp-area="Admin" asp-route-id="@news.NewsID" class="btn btn-danger">Sil</a>
+                </div>
+            </div>
+        }
+    </div>
+  
+</div>
+
+
+<div class="card-columns" id="filteredNewsContainer" style="display: none;">
+    <!-- Buraya kartları ekleyeceksiniz -->
+</div>
+
+
+
+<a class="btn btn-primary m-1" asp-action="HaberEkle" asp-controller="Haberler" asp-area="Admin">Haber Ekle</a>
+
+<div class="text-center">
+    
+    <div page-model="@Model?.Pagination" page-action="Index" page-classes-enabled="true" page-class="btn"
+         page-class-normal="btn-outline-dark" page-class-selected="btn-secondary" class="btn-group">
+    </div>
+</div>
+@section Style
+    {
+    <link rel="stylesheet" href="~/adminlte-3.2.0/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="~/adminlte-3.2.0/plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
+    <link rel="stylesheet" href="~/adminlte-3.2.0/plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
+}
+    @section Script
+    {
+    <script src="~/adminlte-3.2.0/plugins/datatables/jquery.dataTables.min.js"></script>
+    <script src="~/adminlte-3.2.0/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+    <script src="~/adminlte-3.2.0/plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="~/adminlte-3.2.0/plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+    <script src="~/adminlte-3.2.0/plugins/datatables-buttons/js/dataTables.buttons.min.js"></script>
+    <script src="~/adminlte-3.2.0/plugins/datatables-buttons/js/buttons.bootstrap4.min.js"></script>
+    <script src="~/adminlte-3.2.0/plugins/jszip/jszip.min.js"></script>
+    <script src="~/adminlte-3.2.0/plugins/pdfmake/pdfmake.min.js"></script>
+    <script src="~/adminlte-3.2.0/plugins/pdfmake/vfs_fonts.js"></script>
+    <script src="~/adminlte-3.2.0/plugins/datatables-buttons/js/buttons.html5.min.js"></script>
+    <script src="~/adminlte-3.2.0/plugins/datatables-buttons/js/buttons.print.min.js"></script>
+    <script src="~/adminlte-3.2.0/plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
+    @*
+
+ <script>
+        $(function () {
+            $("#example1").DataTable({
+                "responsive": true, "lengthChange": false, "autoWidth": false,
+                "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
+            }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
+            $('#example2').DataTable({
+                "paging": true,
+                "lengthChange": false,
+                "searching": false,
+                "ordering": true,
+                "info": true,
+                "autoWidth": false,
+                "responsive": true,
+            });
+        });
+    </script>
+  *@
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+    <script>
+
+        $(document).ready(function () {
+            $("#filterButton").click(function () {
+                var FilterNews = $("#filterInput").val();
+
+                $.ajax({
+                    url: '/Admin/Haberler/FilterNews/',
+                    type: 'POST',
+                    data: { FilterNews: FilterNews },
+                    dataType: 'json', // Veri türünü JSON olarak belirtin
+                    success: function (result) {
+                        displayFilteredNews(result);
+                    },
+                    error: function () {
+                        // Hata işleme kodunu buraya ekleyin
+                    }
+                });
+            });
+        });
+
+        function displayFilteredNews(filteredNews) {
+            console.log("Fonksiyona girdi", filteredNews);
+            if (filteredNews != null) {
+                $("#ilkgelen").hide();
+                var cardColumnsDiv = $("#filteredNewsContainer");
+                var cardHtml = '';
+
+                for (var i = 0; i < filteredNews.length; i++) {
+                    var news = filteredNews[i];
+                    // Check if news.NewsID is defined before constructing the URL
+                    //         var editUrl = news.NewsID ? '/Admin/Haberler/HaberDuzenle/' + news.NewsID : '#';
+                    //          var deleteUrl = news.NewsID ? '/Admin/Haberler/HaberSil/' + news.NewsID : '#';
+
+                    cardHtml += '<div class="card">';
+                    cardHtml += '<img class="card-img-top" src="' + news.NewsPhoto + '" alt="' + news.NewsTitle + '">';
+                    cardHtml += '<div class="card-body">';
+                    cardHtml += '<h5 class="card-title">' + news.NewsTitle + '</h5>';
+                    cardHtml += '<p class="card-text">' + news.NewsShortDescription + '</p>';
+                    // Use the constructed URLs
+                    // cardHtml += '<a href="' + editUrl + '" class="btn btn-primary">Düzenle</a>';
+                    //   cardHtml += '<a href="' + deleteUrl + '" class="btn btn-danger">Sil</a>';
+                    cardHtml += '</div>';
+                    cardHtml += '</div>';
+                }
+
+                cardColumnsDiv.html(cardHtml);
+                cardColumnsDiv.show();
+            }
+        }
+
+
+
+
+
+
+    </script>
+
+
+}
+    <style>
+        .card-img-top {
+            object-fit: cover;
+            height: 200px;
+        }
+
+    </style>

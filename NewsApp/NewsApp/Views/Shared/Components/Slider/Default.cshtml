@@ -1,0 +1,36 @@
+﻿@model IEnumerable<NewsApp.Models.NewsViewModel>
+
+<div class="container">
+    <div class="col-lg-5">
+        <div class="row shorts-news-d1 row-cols-1 row-cols-md-2 g-lg-2">
+            @{
+                var categories = ViewBag.categories as List<EntityLayer.Models.Category>;
+            }
+
+            @foreach (var news in Model)
+            {
+                var categoryName = categories
+                .FirstOrDefault(c => c.CategoryID.ToString() == news.CategoryName);
+                var categoryNameString = categoryName != null ? categoryName.CategoryName : null;
+
+                <div class="col">
+                    <a href="/Home/NewsDetails/@news.NewsID" class="comon-slider-items">
+                        <figure>
+                            <img src="@news.NewsPhoto" alt="big1" />
+                        </figure>
+                        <span class="titel-t d-block">
+                            <span class="nes-tags d-block"> @categoryNameString </span>
+                            <p> @news.NewsShortDescription</p>
+                            <span class="date-t d-block"> @news.NewsDate.ToString("MMMM dd, yyyy") </span>
+                        </span>
+                    </a>
+                </div>
+            }
+
+
+
+
+        </div>
+    </div>
+</div>
+

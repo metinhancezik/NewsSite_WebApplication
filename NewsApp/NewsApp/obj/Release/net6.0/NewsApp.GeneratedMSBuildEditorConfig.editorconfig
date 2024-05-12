@@ -1,0 +1,145 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = NewsApp
+build_property.RootNamespace = NewsApp
+build_property.ProjectDir = C:\Users\MSI\Windows\Desktop\SondanOnce\NewsApp\NewsApp\NewsApp\NewsApp\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\MSI\Windows\Desktop\SondanOnce\NewsApp\NewsApp\NewsApp\NewsApp
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/MSI/Windows/Desktop/SondanOnce/NewsApp/NewsApp/NewsApp/NewsApp/Areas/Admin/Views/AnaHaber/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQW5hSGFiZXJcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MSI/Windows/Desktop/SondanOnce/NewsApp/NewsApp/NewsApp/NewsApp/Areas/Admin/Views/Default/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcRGVmYXVsdFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MSI/Windows/Desktop/SondanOnce/NewsApp/NewsApp/NewsApp/NewsApp/Areas/Admin/Views/GizlilikPolitikasi/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcR2l6bGlsaWtQb2xpdGlrYXNpXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MSI/Windows/Desktop/SondanOnce/NewsApp/NewsApp/NewsApp/NewsApp/Areas/Admin/Views/Haberler/HaberDuzenle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSGFiZXJsZXJcSGFiZXJEdXplbmxlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MSI/Windows/Desktop/SondanOnce/NewsApp/NewsApp/NewsApp/NewsApp/Areas/Admin/Views/Haberler/HaberEkle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSGFiZXJsZXJcSGFiZXJFa2xlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MSI/Windows/Desktop/SondanOnce/NewsApp/NewsApp/NewsApp/NewsApp/Areas/Admin/Views/Haberler/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSGFiZXJsZXJcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MSI/Windows/Desktop/SondanOnce/NewsApp/NewsApp/NewsApp/NewsApp/Areas/Admin/Views/Kategori/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcS2F0ZWdvcmlcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MSI/Windows/Desktop/SondanOnce/NewsApp/NewsApp/NewsApp/NewsApp/Areas/Admin/Views/Kategori/KategoriEkle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcS2F0ZWdvcmlcS2F0ZWdvcmlFa2xlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MSI/Windows/Desktop/SondanOnce/NewsApp/NewsApp/NewsApp/NewsApp/Areas/Admin/Views/KullanimSartlari/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcS3VsbGFuaW1TYXJ0bGFyaVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MSI/Windows/Desktop/SondanOnce/NewsApp/NewsApp/NewsApp/NewsApp/Areas/Admin/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MSI/Windows/Desktop/SondanOnce/NewsApp/NewsApp/NewsApp/NewsApp/Areas/Admin/Views/Shared/_Navbar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9OYXZiYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MSI/Windows/Desktop/SondanOnce/NewsApp/NewsApp/NewsApp/NewsApp/Areas/Admin/Views/Shared/_Sidebar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9TaWRlYmFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MSI/Windows/Desktop/SondanOnce/NewsApp/NewsApp/NewsApp/NewsApp/Areas/Admin/Views/SonDakika/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU29uRGFraWthXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MSI/Windows/Desktop/SondanOnce/NewsApp/NewsApp/NewsApp/NewsApp/Areas/Admin/Views/Vitrin/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVml0cmluXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MSI/Windows/Desktop/SondanOnce/NewsApp/NewsApp/NewsApp/NewsApp/Areas/Admin/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MSI/Windows/Desktop/SondanOnce/NewsApp/NewsApp/NewsApp/NewsApp/Areas/Admin/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MSI/Windows/Desktop/SondanOnce/NewsApp/NewsApp/NewsApp/NewsApp/Areas/Admin/Views/İletisim/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcxLBsZXRpc2ltXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MSI/Windows/Desktop/SondanOnce/NewsApp/NewsApp/NewsApp/NewsApp/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MSI/Windows/Desktop/SondanOnce/NewsApp/NewsApp/NewsApp/NewsApp/Views/Error/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXJyb3JcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MSI/Windows/Desktop/SondanOnce/NewsApp/NewsApp/NewsApp/NewsApp/Views/Home/Categories.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDYXRlZ29yaWVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MSI/Windows/Desktop/SondanOnce/NewsApp/NewsApp/NewsApp/NewsApp/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MSI/Windows/Desktop/SondanOnce/NewsApp/NewsApp/NewsApp/NewsApp/Views/Home/NewsDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxOZXdzRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MSI/Windows/Desktop/SondanOnce/NewsApp/NewsApp/NewsApp/NewsApp/Views/Shared/Components/AnaHaber/AnaHaber.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcQW5hSGFiZXJcQW5hSGFiZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MSI/Windows/Desktop/SondanOnce/NewsApp/NewsApp/NewsApp/NewsApp/Views/Shared/Components/BreakingNews/BreakingNews.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcQnJlYWtpbmdOZXdzXEJyZWFraW5nTmV3cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MSI/Windows/Desktop/SondanOnce/NewsApp/NewsApp/NewsApp/NewsApp/Views/Shared/Components/CategoriesOrtaSayfa/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcQ2F0ZWdvcmllc09ydGFTYXlmYVxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MSI/Windows/Desktop/SondanOnce/NewsApp/NewsApp/NewsApp/NewsApp/Views/Shared/Components/MainMenu/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcTWFpbk1lbnVcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MSI/Windows/Desktop/SondanOnce/NewsApp/NewsApp/NewsApp/NewsApp/Views/Shared/Components/Slider/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcU2xpZGVyXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MSI/Windows/Desktop/SondanOnce/NewsApp/NewsApp/NewsApp/NewsApp/Views/Shared/_Header.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9IZWFkZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MSI/Windows/Desktop/SondanOnce/NewsApp/NewsApp/NewsApp/NewsApp/Views/Shared/_MainMenu.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9NYWluTWVudS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MSI/Windows/Desktop/SondanOnce/NewsApp/NewsApp/NewsApp/NewsApp/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MSI/Windows/Desktop/SondanOnce/NewsApp/NewsApp/NewsApp/NewsApp/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MSI/Windows/Desktop/SondanOnce/NewsApp/NewsApp/NewsApp/NewsApp/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-19jujy11wt
